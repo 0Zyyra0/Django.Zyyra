@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .view import http_test
+from lewissite.views import about
 urlpatterns = [
 
     path('admin/', admin.site.urls),
     # path ('url addres' , 'view' )
-    path('http-test',http_test)
+    path('about',about)
 
 
 ]
